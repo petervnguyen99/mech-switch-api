@@ -1,4 +1,4 @@
-package com.switches.mechswitchapi.Entity;
+package com.switches.mechswitchapi.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -24,13 +24,13 @@ public class Switch {
     private String type;
 
     // Operating force (measured in cN)
-    private String operating_force;
+    private String operatingForce;
 
     // activation point (measured in mm sometimes called pretravel)
-    private String activation_point;
+    private String activationPoint;
 
     // Total travel distance (measured in mm)
-    private String travel_distance;
+    private String travelDistance;
 
     // lifespan (measured in millions)
     private String lifespan;
@@ -75,28 +75,28 @@ public class Switch {
         this.type = type;
     }
 
-    public String getOperating_force() {
-        return operating_force;
+    public String getOperatingForce() {
+        return operatingForce;
     }
 
-    public void setOperating_force(String operating_force) {
-        this.operating_force = operating_force;
+    public void setOperatingForce(String operatingForce) {
+        this.operatingForce = operatingForce;
     }
 
-    public String getActivation_point() {
-        return activation_point;
+    public String getActivationPoint() {
+        return activationPoint;
     }
 
-    public void setActivation_point(String activation_point) {
-        this.activation_point = activation_point;
+    public void setActivationPoint(String activationPoint) {
+        this.activationPoint = activationPoint;
     }
 
-    public String getTravel_distance() {
-        return travel_distance;
+    public String getTravelDistance() {
+        return travelDistance;
     }
 
-    public void setTravel_distance(String travel_distance) {
-        this.travel_distance = travel_distance;
+    public void setTravelDistance(String travelDistance) {
+        this.travelDistance = travelDistance;
     }
 
     public String getLifespan() {

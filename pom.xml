@@ -14,28 +14,56 @@
 	<name>mech-switch-api</name>
 	<description>API for connecting to mySQL Database</description>
 	<properties>
-		<java.version>15</java.version>
+		<java.version>1.8</java.version>
+		<io.springfox.version>2.9.2</io.springfox.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- Data -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- Tests -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- SWAGGER -->
+<!--		<dependency>-->
+<!--			<groupId>io.springfox</groupId>-->
+<!--			<artifactId>springfox-boot-starter</artifactId>-->
+<!--			<version>3.0.0</version>-->
+<!--		</dependency>-->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${io.springfox.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${io.springfox.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>21.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
